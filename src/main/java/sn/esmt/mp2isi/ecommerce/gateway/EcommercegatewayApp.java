@@ -14,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.core.env.Environment;
+import org.springframework.web.reactive.config.EnableWebFlux;
 import sn.esmt.mp2isi.ecommerce.gateway.config.ApplicationProperties;
 import sn.esmt.mp2isi.ecommerce.gateway.config.CRLFLogConverter;
 import tech.jhipster.config.DefaultProfileUtil;
@@ -21,6 +22,7 @@ import tech.jhipster.config.JHipsterConstants;
 
 @SpringBootApplication
 @EnableConfigurationProperties({ LiquibaseProperties.class, ApplicationProperties.class })
+@EnableWebFlux
 public class EcommercegatewayApp {
 
     private static final Logger log = LoggerFactory.getLogger(EcommercegatewayApp.class);

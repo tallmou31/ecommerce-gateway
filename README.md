@@ -214,6 +214,11 @@ For more information refer to [Using Docker and Docker-Compose][], this page als
 
 To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
 
+## Consul
+
+consul agent -server -bootstrap-expect=1 -data-dir=consult-data -ui -bind=<ip-adress>
+http://localhost:8500/
+
 [jhipster homepage and latest documentation]: https://www.jhipster.tech
 [jhipster 7.9.4 archive]: https://www.jhipster.tech/documentation-archive/v7.9.4
 [doing microservices with jhipster]: https://www.jhipster.tech/documentation-archive/v7.9.4/microservices-architecture/
